@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <input type="checkbox" />
     <div class="toggle">
+      <!-- Used the v-on click event selector -->
       <div class="toggle-button" v-on:click="toggle()"></div>
     </div>
   </div>
@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  //To reneder the componenet as disabled, I added a diabled prop
   name: "ToggleSwitch",
   props: {
     disabled: {
@@ -17,6 +18,7 @@ export default {
     },
   },
   methods: {
+    //Using the querySelector method to access the toggle class and set the state to active using the built in toggle method
     toggle: function () {
       let toggle = document.querySelector(".toggle");
       toggle.classList.toggle("active");
@@ -25,26 +27,21 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 .container {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container .toggle {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 90px;
   height: 50px;
-  background: #ccc;
+  background: lightgray;
   border-radius: 30px;
   transition: 0.4s;
 }
@@ -54,16 +51,16 @@ export default {
 }
 
 .container .toggle.active .toggle-button {
-  left: 45px;
+  left: 50px;
 }
 
 .container .toggle .toggle-button {
-  position: absolute;
+  position: relative;
   top: 5px;
-  left: 5px;
-  width: 40px;
-  height: 40px;
-  background: white;
+  left: 3px;
+  width: 38px;
+  height: 38px;
+  background: #ffff;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.4s;
