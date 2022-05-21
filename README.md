@@ -1,24 +1,8 @@
-# toggle-component
+### ToogleSwitch Component with Enabled and Disabled State (Vue.js)
 
-## Project setup
-```
-npm install
-```
+### Instructions:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- clone project
+- run `npm install`
+- run `npm run serve`
+- open project on http://localhost:8080/
