@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  //To reneder the componenet as disabled, I added a diabled prop
+  //To render the component as disabled, I added a disabled prop
   name: "ToggleSwitch",
   props: {
     disabled: {
